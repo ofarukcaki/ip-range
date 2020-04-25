@@ -108,3 +108,4 @@ tests/
 
 lib/
 package-lock.json
+src/*.test.ts
