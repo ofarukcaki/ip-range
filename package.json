@@ -1,7 +1,7 @@
 {
   "name": "ip-range",
-  "version": "0.0.1",
-  "description": "Check if the given IP is in the provided range.",
+  "version": "1.0.0",
+  "description": "Check if the given IP address is in the provided range.",
   "main": "lib/src/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register test/test.ts",
@@ -15,7 +15,12 @@
     "ip",
     "address"
   ],
-  "author": "Omer Faruk Caki",
+  "repository": "github:ofarukcaki/ip-range",
+  "author": {
+    "name": "Faruk Caki",
+    "email": "contact@ofarukcaki.com",
+    "url": "https://ofarukcaki.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.2.11",
