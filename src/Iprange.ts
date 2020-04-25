@@ -3,7 +3,7 @@ export default class Iprange {
   ranges: string[][];
 
   // empty array as default cosntruction parameter
-  constructor(ranges: [][] = []) {
+  constructor(ranges: string[][] = []) {
     this.ranges = ranges;
   }
 
@@ -23,11 +23,10 @@ export default class Iprange {
   // check given IP if its in the range
   checkIP(ip: string): boolean {
     // split ip address
-    let inRange = false;
-
     const _ip: number[] = ip.split('.').map(Number);
     // loop all ranges
-    this.ranges.forEach((range) => {
+    for (let range of this.ranges) {
+      // this.ranges.forEach((range) => {
       const [start, end] = range;
 
       const _start = start.split('.').map(Number);
@@ -37,16 +36,17 @@ export default class Iprange {
 
       // all parts until the different one must be equal with the current range
       for (let i = 0; i < differentPart; i++) {
-        if (_start[i] != _ip[i]) break;
+        if (_start[i] != _ip[i]) continue;
       }
       // check difference part
       if (
         _ip[differentPart] >= _start[differentPart] &&
         _ip[differentPart] <= _end[differentPart]
       ) {
-        inRange = true;
+        // IP is in the range, return true
+        return true;
       }
-    });
-    return inRange;
+    }
+    return false;
   }
 }
