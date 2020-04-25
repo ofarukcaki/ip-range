@@ -1,0 +1,18 @@
+{
+  "name": "ip-range",
+  "version": "0.0.1",
+  "description": "Check if the given IP is in the provided range.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ip",
+    "range",
+    "ip-range",
+    "ip",
+    "address"
+  ],
+  "author": "Omer Faruk Caki",
+  "license": "MIT"
+}
