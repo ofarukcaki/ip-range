@@ -25,7 +25,7 @@ export default class Iprange {
     // split ip address
     const _ip: number[] = ip.split('.').map(Number);
     // loop all ranges
-    for (let range of this.ranges) {
+    outherLoop: for (let range of this.ranges) {
       // this.ranges.forEach((range) => {
       const [start, end] = range;
 
@@ -36,7 +36,9 @@ export default class Iprange {
 
       // all parts until the different one must be equal with the current range
       for (let i = 0; i < differentPart; i++) {
-        if (_start[i] != _ip[i]) continue;
+        if (_start[i] != _ip[i]) {
+          continue outherLoop;
+        }
       }
       // check difference part
       if (
