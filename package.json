@@ -2,9 +2,10 @@
   "name": "ip-range",
   "version": "0.0.1",
   "description": "Check if the given IP is in the provided range.",
-  "main": "index.js",
+  "main": "lib/src/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register test/test.ts",
+    "test-build": "mocha lib/test/test.js",
     "build": "tsc"
   },
   "keywords": [
