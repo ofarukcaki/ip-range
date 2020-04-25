@@ -105,3 +105,6 @@ dist
 
 # tests / demos
 tests/
+
+lib/
+package-lock.json
