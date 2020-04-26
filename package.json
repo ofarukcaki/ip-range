@@ -1,6 +1,6 @@
 {
   "name": "@ofarukcaki/ip-range",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check if the given IP address is in the provided range.",
   "main": "lib/src/index.js",
   "scripts": {
