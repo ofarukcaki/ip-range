@@ -8,6 +8,8 @@ Check if the given IP address is in the provided range.
 npm i @ofarukcaki/ip-range
 ```
 
+## Usage
+
 ```javascript
 const Iprange = require('@ofarukcaki/ip-range').default;
 
